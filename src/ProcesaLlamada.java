@@ -18,7 +18,7 @@ public class ProcesaLlamada {
             try {
                 Moneda moneda = llamadaApi.buscaConversion(base_code, target_code);
                 if (moneda.result().equals("success")) {
-                    System.out.println(moneda.result());
+                    
                     System.out.println(String.format("El valor de %.2f [%s] corresponde al valor final de %.2f [%s]",
                             cantidad,
                             moneda.base_code(),
