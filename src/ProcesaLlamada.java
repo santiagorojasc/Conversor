@@ -18,7 +18,6 @@ public class ProcesaLlamada {
             try {
                 Moneda moneda = llamadaApi.buscaConversion(base_code, target_code);
                 if (moneda.result().equals("success")) {
-
                     System.out.println(String.format("El valor de %.2f [%s] corresponde al valor final de %.2f [%s]",
                             cantidad,
                             moneda.base_code(),
@@ -31,7 +30,7 @@ public class ProcesaLlamada {
                 System.out.println(e.getMessage());
             }
         } else {
-            System.out.println("Error, debe ingresar Cantidad");
+            System.out.println("Error debe ingresar monto a convertir");
         }
 
 
