@@ -30,7 +30,7 @@ public class ProcesaLlamada {
                 System.out.println(e.getMessage());
             }
         } else {
-            System.out.println("Error debe ingresar monto a convertir");
+            System.out.println("Error debe ingresar cantidad a convertir");
         }
 
 
